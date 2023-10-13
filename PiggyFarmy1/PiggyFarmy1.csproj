@@ -88,6 +88,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Others\Styles\NavigationButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\DataBase\Model1.cs" />
@@ -120,11 +124,43 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
     <Folder Include="Model\DataBase\Entity\" />
     <Folder Include="ResourceXaml\" />
     <Folder Include="ViewModel\" />
     <Folder Include="View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\heo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_pig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_cage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_diary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_target.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_setting.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
