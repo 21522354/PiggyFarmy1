@@ -12,6 +12,7 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
                 
                 <ResourceDictionary Source="Others/Styles/NavigationButton.xaml"/>
+                <ResourceDictionary Source="Others/Styles/NormalButton.xaml"/>
 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

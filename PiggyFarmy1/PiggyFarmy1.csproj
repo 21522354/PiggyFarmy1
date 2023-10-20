@@ -76,6 +76,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\UC\QuanLyCaTheHeoVM.cs" />
+    <Compile Include="View\UC\QuanLyCaTheHeoUC.xaml.cs">
+      <DependentUpon>QuanLyCaTheHeoUC.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -89,6 +93,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Others\Styles\NavigationButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Others\Styles\NormalButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UC\QuanLyCaTheHeoUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -126,8 +138,8 @@
   <ItemGroup>
     <Folder Include="Model\DataBase\Entity\" />
     <Folder Include="ResourceXaml\" />
-    <Folder Include="ViewModel\" />
-    <Folder Include="View\" />
+    <Folder Include="ViewModel\Window\" />
+    <Folder Include="View\Window\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\heo.png" />

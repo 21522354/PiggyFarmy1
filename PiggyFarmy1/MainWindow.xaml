@@ -52,7 +52,7 @@
                             </StackPanel>
                         </Expander.Header>
                         <StackPanel Margin="30 0 0 0" Orientation="Vertical">
-                            <Button Style="{StaticResource NavigationButton}" HorizontalAlignment="Stretch">
+                            <Button Click="QuanLyCaTheoHeoClick" Style="{StaticResource NavigationButton}" HorizontalAlignment="Stretch">
                                 <Grid>
                                     <TextBlock Padding="5" Text="Quản lý cá thể heo"
                                                FontSize="20" FontWeight="Bold"
