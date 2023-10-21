@@ -81,6 +81,7 @@
       <DependentUpon>202310210245225_add Heo and ChuongHeo and relate table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\DataBase\DataProvider.cs" />
     <Compile Include="Model\DataBase\Entity\CHUONGHEO.cs" />
     <Compile Include="Model\DataBase\Entity\GIONGHEO.cs" />
     <Compile Include="Model\DataBase\Entity\HEO.cs" />
@@ -116,7 +117,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\DataBase\Model1.cs" />
+    <Compile Include="Model\DataBase\PiggyFarmyEntities.cs" />
     <Compile Include="Others\BaseViewModel.cs" />
     <Compile Include="Others\RelayCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -6,9 +6,9 @@ using System.Linq;
 
 namespace PiggyFarmy1.Model.DataBase
 {
-    public partial class Model1 : DbContext
+    public partial class PiggyFarmyEntities : DbContext
     {
-        public Model1()
+        public PiggyFarmyEntities()
             : base("name=PiggyFarmyEntities")
         {
         }
