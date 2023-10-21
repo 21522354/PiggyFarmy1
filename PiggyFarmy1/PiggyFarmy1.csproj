@@ -76,6 +76,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Migrations\202310210245225_add Heo and ChuongHeo and relate table.cs" />
+    <Compile Include="Migrations\202310210245225_add Heo and ChuongHeo and relate table.designer.cs">
+      <DependentUpon>202310210245225_add Heo and ChuongHeo and relate table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\DataBase\Entity\CHUONGHEO.cs" />
+    <Compile Include="Model\DataBase\Entity\GIONGHEO.cs" />
+    <Compile Include="Model\DataBase\Entity\HEO.cs" />
+    <Compile Include="Model\DataBase\Entity\LOAICHUONG.cs" />
+    <Compile Include="Model\DataBase\Entity\LOAIHEO.cs" />
     <Compile Include="ViewModel\UC\QuanLyCaTheHeoVM.cs" />
     <Compile Include="View\UC\QuanLyCaTheHeoUC.xaml.cs">
       <DependentUpon>QuanLyCaTheHeoUC.xaml</DependentUpon>
@@ -122,6 +132,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\202310210245225_add Heo and ChuongHeo and relate table.resx">
+      <DependentUpon>202310210245225_add Heo and ChuongHeo and relate table.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -136,7 +149,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\DataBase\Entity\" />
     <Folder Include="ResourceXaml\" />
     <Folder Include="ViewModel\Window\" />
     <Folder Include="View\Window\" />
