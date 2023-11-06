@@ -82,7 +82,7 @@
             <Grid Grid.Column="0">
                 <ScrollViewer>
                     <StackPanel Orientation="Vertical" Background="#ebebeb">
-                        <Expander Background="#ebebeb" 
+                        <Expander IsExpanded="{Binding isNgaySinhExpanded}" Background="#ebebeb" 
                                 Foreground="Black"
                                 HorizontalAlignment="Stretch"
                             >
@@ -109,7 +109,7 @@
                                     Style="{StaticResource MaterialDesignFilledDatePicker}" />
                             </StackPanel>
                         </Expander>
-                        <Expander Background="#ebebeb" 
+                        <Expander IsExpanded="{Binding isGioiTinhExpanded}" Background="#ebebeb" 
                             Foreground="Black"
                             HorizontalAlignment="Stretch"
                             >
@@ -132,14 +132,14 @@
                                     FontSize="15"
                                     Style="{StaticResource MaterialDesignFilledComboBox}"
                                     Height="48"
-                                    SelectedValue="{Binding Sex, Mode=OneWayToSource}"
+                                    SelectedValue="{Binding SelectedGioiTinh, Mode=OneWayToSource}"
                                     >
                                     <ComboBoxItem Content="Đực"/>
                                     <ComboBoxItem Content="Cái"/>
                                 </ComboBox>
                             </StackPanel>
                         </Expander>
-                        <Expander Background="#ebebeb" 
+                        <Expander IsExpanded="{Binding isTrongLuongExpanded}" Background="#ebebeb" 
                             Foreground="Black"
                             HorizontalAlignment="Stretch"
                             >
@@ -154,7 +154,7 @@
                                 </StackPanel>
                             </Expander.Header>
                             <StackPanel Margin="30 0 20 0" Orientation="Vertical">
-                                <TextBox Margin="20 0 0 0"
+                                <TextBox Margin="20 0 0 0" 
                                     Text="{Binding StartWeight, Mode=OneWayToSource}"
                                     Width="256" Background="#ebebeb"
                                     Padding="5"
@@ -170,7 +170,7 @@
                                     VerticalAlignment="Center" Height="46"/>
                             </StackPanel>
                         </Expander>
-                        <Expander Background="#ebebeb" 
+                        <Expander IsExpanded="{Binding isLoaiHeoExpanded}" Background="#ebebeb" 
                             Foreground="Black"
                             HorizontalAlignment="Stretch"
                             >
@@ -191,12 +191,13 @@
                                     Width="auto"
                                     materialDesign:HintAssist.Hint="Chọn loại heo"
                                     FontSize="15"
+                                    SelectedValue="{Binding SelectedLoaiHeo}"
                                     ItemsSource="{Binding ListLoaiHeo}"
                                     Style="{StaticResource MaterialDesignFilledComboBox}" Height="49">
                                 </ComboBox>
                             </StackPanel>
                         </Expander>
-                        <Expander Background="#ebebeb" 
+                        <Expander IsExpanded="{Binding isGiongHeoExpanded}" Background="#ebebeb" 
                             Foreground="Black"
                             HorizontalAlignment="Stretch"
                             >
@@ -217,12 +218,13 @@
                                     Width="auto"
                                     materialDesign:HintAssist.Hint="Chọn giống heo"
                                     FontSize="15"
+                                    SelectedValue="{Binding SelectedGiongHeo}"
                                     ItemsSource="{Binding ListGiongHeo}"
                                     Style="{StaticResource MaterialDesignFilledComboBox}" Height="52">
                                 </ComboBox>
                             </StackPanel>
                         </Expander>
-                        <Expander Background="#ebebeb" 
+                        <Expander IsExpanded="{Binding isTinhTrangExpanded}" Background="#ebebeb" 
                                 Foreground="Black"
                                 HorizontalAlignment="Stretch"
                                 >
@@ -243,14 +245,14 @@
                                     Width="auto"
                                     materialDesign:HintAssist.Hint="Tình trạng"
                                     FontSize="15"
-                                    ItemsSource="{Binding ListGiongHeo}"
+                                    SelectedValue="{Binding SelectedTinhTrang}"
                                     Style="{StaticResource MaterialDesignFilledComboBox}" Height="50">
                                     <ComboBoxItem Content="Tốt"/>
                                     <ComboBoxItem Content="Bị bệnh"/>
                                 </ComboBox>
                             </StackPanel>
                         </Expander>
-                        <Expander Background="#ebebeb" 
+                        <Expander IsExpanded="{Binding isTinhTrangExpanded}" Background="#ebebeb" 
                                 Foreground="Black"
                                 HorizontalAlignment="Stretch"
                                 >
@@ -271,7 +273,7 @@
                                     Width="auto"
                                     materialDesign:HintAssist.Hint="Nguồn gốc"
                                     FontSize="15"
-                                    ItemsSource="{Binding ListGiongHeo}"
+                                    SelectedValue="{Binding SelectedNguonGoc}"
                                     Style="{StaticResource MaterialDesignFilledComboBox}" Height="52">
                                     <ComboBoxItem Content="Trong trang trại"/>
                                     <ComboBoxItem Content="Ngoài trang trại"/>
@@ -309,6 +311,12 @@
                                 <GridViewColumn Header="Giống heo" DisplayMemberBinding="{Binding SelectedHeo.GiongHeo}"/>
                             </GridView>
                         </ListView.View>
+                        <ListView.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Icon="{materialDesign:PackIcon Kind=Edit}" Header="Xem hoặc sửa" Command="{Binding EditCommand}" />
+                                <MenuItem Icon="{materialDesign:PackIcon Kind=Delete}" Header="Xoá" Command="{Binding DeleteCommand}" />
+                            </ContextMenu>
+                        </ListView.ContextMenu>
                     </ListView>
                 </ScrollViewer>
                 
