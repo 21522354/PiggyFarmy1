@@ -126,8 +126,10 @@
   <ItemGroup>
     <Folder Include="Model\DataBase\Entity\" />
     <Folder Include="ResourceXaml\" />
-    <Folder Include="ViewModel\" />
-    <Folder Include="View\" />
+    <Folder Include="ViewModel\UC\" />
+    <Folder Include="ViewModel\Window\" />
+    <Folder Include="View\UC\" />
+    <Folder Include="View\Window\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\heo.png" />
