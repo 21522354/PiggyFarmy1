@@ -80,6 +80,10 @@
     <Compile Include="Migrations\202310210245225_add Heo and ChuongHeo and relate table.designer.cs">
       <DependentUpon>202310210245225_add Heo and ChuongHeo and relate table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202311061308103_chinh sua chuong va loai chuong.cs" />
+    <Compile Include="Migrations\202311061308103_chinh sua chuong va loai chuong.designer.cs">
+      <DependentUpon>202311061308103_chinh sua chuong va loai chuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\DataBase\DataProvider.cs" />
     <Compile Include="Model\DataBase\Entity\CHUONGHEO.cs" />
@@ -135,6 +139,9 @@
     </Compile>
     <EmbeddedResource Include="Migrations\202310210245225_add Heo and ChuongHeo and relate table.resx">
       <DependentUpon>202310210245225_add Heo and ChuongHeo and relate table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311061308103_chinh sua chuong va loai chuong.resx">
+      <DependentUpon>202311061308103_chinh sua chuong va loai chuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

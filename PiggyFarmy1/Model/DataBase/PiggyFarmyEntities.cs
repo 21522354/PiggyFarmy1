@@ -9,7 +9,7 @@ namespace PiggyFarmy1.Model.DataBase
     public partial class PiggyFarmyEntities : DbContext
     {
         public PiggyFarmyEntities()
-            : base("name=PiggyFarmyEntities")
+            : base("name=PiggyFarmyDB")
         {
         }
 

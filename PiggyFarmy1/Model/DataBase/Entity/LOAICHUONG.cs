@@ -18,6 +18,7 @@ namespace PiggyFarmy1.Model.DataBase.Entity
         public string MaLoaiChuong { get; set; }
         public string TenLoai { get; set; }
         public string MoTa { get; set; }
+        public int SucChuaToiDa { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHUONGHEO> CHUONGHEOs { get; set; }

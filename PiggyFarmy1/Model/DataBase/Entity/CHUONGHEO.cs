@@ -20,8 +20,6 @@ namespace PiggyFarmy1.Model.DataBase.Entity
         public string MaLoaiChuong { get; set; }
         private string _TinhTrang;
         public string TinhTrang { get => _TinhTrang; set { _TinhTrang = value; OnPropertyChanged(); } }
-        private Nullable<int> _SuaChuaToiDa;
-        public Nullable<int> SuaChuaToiDa { get => _SuaChuaToiDa; set { _SuaChuaToiDa = value; OnPropertyChanged(); } }
         public Nullable<int> SoLuongHeo { get; set; }
 
         public virtual LOAICHUONG LOAICHUONG { get; set; }
